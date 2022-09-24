@@ -8,12 +8,13 @@ body {
     src: url(font1.ttf);
 }
 
-.date {
+.container {
     margin-top: 20%;
     color: white;
     font-family: font1;
     font-size: 50px;
 }
+
 
 p{
     display: inline;
@@ -21,44 +22,45 @@ p{
 }
 
 @media(max-width:1000px) {
-
+    .container {margin-top: 35%;}
 }
 
 @media(max-width:900px) {
-    .date {margin-top: 29%;}
+    .container {margin-top: 40%;}
 }
 
 @media(max-width:800px) {
-    .date {margin-top: 36%;}
+    .container {margin-top: 45%; font-size: 35px ;}
+
 }
 
 @media(max-width:700px) {
-    .date {margin-top: 41%; font-size: 35px;}
+    .container {margin-top: 47%; font-size: 35px;}
 }
 
 @media(max-width:600px) {
-    .date {margin-top: 50%; font-size: 35px;}
+    .container {margin-top: 50%; font-size: 35px;}
 }
 
 @media(max-width:548px) {
-    .date {margin-top: 60%;}
+    .container {margin-top: 60%;}
     p {margin: 20px;}
-    .date {font-size: 35px;}
+    .container {font-size: 35px;}
 }
 
 @media(max-width:460px) {
     p {margin: 10px;}
-    .date {margin-top: 55%;}
-    .date {font-size: 25px;}
+    .container {margin-top: 64%;}
+    .container {font-size: 25px;}
 }
 
 @media(max-width:400px) {
     p {margin: 10px;}
-    .date {margin-top: 70%;}
-    .date {font-size: 20px;}
+    .container {margin-top: 70%;}
+    .container {font-size: 20px;}
 }
 
 @media(max-width:328px) {
-    .date {margin-top: 80%; font-size: 20px;}
+    .container {margin-top: 80%; font-size: 20px;}
     p {margin: 9px;}
 }
