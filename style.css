@@ -37,11 +37,11 @@ p{
 }
 
 @media(max-width:600px) {
-    .date {margin-top: 45%; font-size: 35px;}
+    .date {margin-top: 50%; font-size: 35px;}
 }
 
 @media(max-width:548px) {
-    .date {margin-top: 50%;}
+    .date {margin-top: 60%;}
     p {margin: 20px;}
     .date {font-size: 35px;}
 }
