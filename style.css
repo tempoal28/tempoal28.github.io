@@ -9,7 +9,7 @@ body {
 }
 
 .date {
-    margin: auto;
+    margin-top: 20%;
     color: white;
     font-family: font1;
     font-size: 50px;
@@ -25,19 +25,19 @@ p{
 }
 
 @media(max-width:900px) {
-    .date {margin-top: 50%;}
+    .date {margin-top: 29%;}
 }
 
 @media(max-width:800px) {
-    .date {margin-top: 50%;}
+    .date {margin-top: 36%;}
 }
 
 @media(max-width:700px) {
-    .date {margin-top: 50%; font-size: 35px;}
+    .date {margin-top: 41%; font-size: 35px;}
 }
 
 @media(max-width:600px) {
-    .date {margin-top: 50%; font-size: 35px;}
+    .date {margin-top: 45%; font-size: 35px;}
 }
 
 @media(max-width:548px) {
@@ -48,17 +48,17 @@ p{
 
 @media(max-width:460px) {
     p {margin: 10px;}
-    .date {margin-top: 50%;}
+    .date {margin-top: 55%;}
     .date {font-size: 25px;}
 }
 
 @media(max-width:400px) {
     p {margin: 10px;}
-    .date {margin-top: 50%;}
+    .date {margin-top: 70%;}
     .date {font-size: 20px;}
 }
 
 @media(max-width:328px) {
-    .date {margin-top: 50%; font-size: 20px;}
+    .date {margin-top: 80%; font-size: 20px;}
     p {margin: 9px;}
 }
