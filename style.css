@@ -18,16 +18,16 @@ h4 {
 
 .cont {
     font-family: font1;
-    font-size: 30px;
+    font-size: 27px;
     color: #fff;
-    padding-top: 25%;
-    max-width: 1400px;
+    padding-top: 22%;
+    max-width: 1500px;
 }
 
 
 p{
     display: inline;
-    margin: 40px;
+    margin: 20px;
 }
 
 @media(max-width: 920px) {
@@ -35,35 +35,36 @@ p{
 }
 
 @media(max-width:800px) {
-    .cont {font-size: 30px;}
-        p {margin: 25px;}
+    .cont {font-size: 27px;}
+        p {margin: 20px;}
 }
 
 @media(max-width:700px) {
-    .cont {font-size: 30px;}
+    .cont {font-size: 25px; padding-top: 37%;}
 }
 
 @media(max-width:600px) {
-    .cont {font-size: 23px;}
+    .cont {font-size: 23px;}        
+    p {margin: 17px;}
 }
 
 @media(max-width:548px) {
-    p {margin: 17px;}
-    .cont {font-size: 20px;}
+    p {margin: 10px;}
+    .cont {font-size: 20px; padding-top: 50%;}
     h4 {font-size: 13px;}
 }
 
 @media(max-width:460px) {
     p {margin: 10px;}
-    .cont {font-size: 17px;}
+    .cont {font-size: 17px; padding-top: 60%;}
 }
 
 @media(max-width:400px) {
     p {margin: 10px;}
-    .conta {font-size: 15px;}
+    .cont {font-size: 15px; padding-top: 72%;}
 }
 
 @media(max-width:328px) {
-    .cont {font-size: 13px;}
+    .cont {font-size: 13px; padding-top: 84%;}
     p {margin: 9px;}
 }
