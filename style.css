@@ -58,7 +58,7 @@ p{
 
 @media(max-width:400px) {
     p {margin: 10px;}
-    .conta {font-size: 20px;}
+    .cont {font-size: 20px;}
 }
 
 @media(max-width:328px) {
