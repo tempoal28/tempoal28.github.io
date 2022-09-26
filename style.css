@@ -1,14 +1,16 @@
 
-
 body {
     background-color: black;
 }
 
 
-h4 {
+
+p {display: inline; margin: 10px;}
+
+h5 {
     color: white;
     font-family: font1;
-    font-size: 19px;
+    font-size: 16.5px;
 }
 
 @font-face {
@@ -16,57 +18,39 @@ h4 {
     src: url(font1.ttf);
 }
 
-.cont {
+.ciao {
     font-family: font1;
     font-size: 27px;
     color: #fff;
-    padding-top: 22%;
-    max-width: 1500px;
+    min-height: 600px;
 }
 
-
-p{
-    display: inline;
-    margin: 20px;
-}
 
 @media(max-width: 920px) {
-    .cont {font-size: 30px;}
 }
 
 @media(max-width:800px) {
-    .cont {font-size: 27px;}
-        p {margin: 20px;}
 }
 
 @media(max-width:700px) {
-    .cont {font-size: 25px; padding-top: 37%;}
+    
 }
 
 @media(max-width:600px) {
-    .cont {font-size: 23px;}        
-    p {margin: 17px;}
+      
 }
 
 @media(max-width:548px) {
-    p {margin: 10px;}
-    .cont {font-size: 20px; padding-top: 50%;}
-    h4 {font-size: 13px;}
+    h5 {font-size: 13px;}
 }
 
-@media(max-width:460px) {
-    p {margin: 10px;}
-    .cont {font-size: 17px; padding-top: 60%;}
-    h4 {font-size:9px ;}
+@media(max-width:460px) {   
+    h5 {font-size:9px ;}
 }
 
-@media(max-width:400px) {
-    p {margin: 10px;}
-    .cont {font-size: 15px; padding-top: 72%;}
+@media(max-width:400px) {   
 }
 
-@media(max-width:328px) {
-    .cont {font-size: 13px; padding-top: 84%;}
-    p {margin: 9px;}
-    h4 {font-size:9px;}
+@media(max-width:328px) {    
+    h5 {font-size:9px;}
 }
