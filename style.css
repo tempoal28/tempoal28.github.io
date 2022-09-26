@@ -1,7 +1,9 @@
+
+
 body {
-    text-align: center;
     background-color: black;
 }
+
 
 h4 {
     color: white;
@@ -14,11 +16,12 @@ h4 {
     src: url(font1.ttf);
 }
 
-.container {
-    margin-top: 20%;
-    color: white;
+.cont {
     font-family: font1;
     font-size: 50px;
+    color: #fff;
+    max-width: 800px;
+    min-height: 600px;
 }
 
 
@@ -27,47 +30,38 @@ p{
     margin: 40px;
 }
 
-@media(max-width:1000px) {
-    .container {margin-top: 35%;}
-}
 
-@media(max-width:900px) {
-    .container {margin-top: 40%;}
-}
 
 @media(max-width:800px) {
-    .container {margin-top: 45%; font-size: 35px ;}
+    .cont {margin-top: 45%; font-size: 30px ;}
 
 }
 
 @media(max-width:700px) {
-    .container {margin-top: 47%; font-size: 35px;}
+    .cont {font-size: 35px;}
 }
 
 @media(max-width:600px) {
-    .container {margin-top: 50%; font-size: 35px;}
+    .cont {font-size: 35px;}
 }
 
 @media(max-width:548px) {
-    .container {margin-top: 60%;}
     p {margin: 20px;}
-    .container {font-size: 35px;}
+    .cont {font-size: 35px;}
     h4 {font-size: 13px;}
 }
 
 @media(max-width:460px) {
     p {margin: 10px;}
-    .container {margin-top: 64%;}
-    .container {font-size: 25px;}
+    .cont {font-size: 25px;}
 }
 
 @media(max-width:400px) {
     p {margin: 10px;}
-    .container {margin-top: 70%;}
-    .container {font-size: 20px;}
+    .conta {font-size: 20px;}
 }
 
 @media(max-width:328px) {
-    .container {margin-top: 80%; font-size: 20px;}
+    .cont {font-size: 20px;}
     p {margin: 9px;}
 }
