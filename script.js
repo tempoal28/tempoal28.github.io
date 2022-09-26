@@ -15,6 +15,7 @@ document.getElementById('seconds').innerHTML = seconds;
 
 if (days == 3591) {
     document.getElementById('auguri').innerHTML = "Buon 28 settembre";
+        document.getElementById('container').style.color = "blue";
 }
 
 if (days < 3591) {
