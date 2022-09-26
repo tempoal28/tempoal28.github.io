@@ -57,6 +57,7 @@ p{
 @media(max-width:460px) {
     p {margin: 10px;}
     .cont {font-size: 17px; padding-top: 60%;}
+    h4 {font-size:9px ;}
 }
 
 @media(max-width:400px) {
@@ -67,4 +68,5 @@ p{
 @media(max-width:328px) {
     .cont {font-size: 13px; padding-top: 84%;}
     p {margin: 9px;}
+    h4 {font-size:9px;}
 }
