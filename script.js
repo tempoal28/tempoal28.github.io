@@ -41,7 +41,7 @@ document.getElementById('hours1').innerHTML = hour;
 document.getElementById('minutes1').innerHTML = minute;
 document.getElementById('seconds1').innerHTML = second;
 
-if (day == 00 && hour == 00 && minute == 00 && second == 00) {
+if (day <= 00 && hour <= 00 && minute <= 00 && second <= 00) {
     var doc = document.getElementById('span1');  doc.remove();
 }
 
