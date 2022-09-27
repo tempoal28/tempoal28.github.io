@@ -12,14 +12,14 @@ document.getElementById('hours').innerHTML = hours;
 document.getElementById('minutes').innerHTML = minutes;
 document.getElementById('seconds').innerHTML = seconds;
 
-if (days == 3590) {
+if (days == 2859) {
     document.getElementById('auguri').innerHTML = "Buon 28 settembre +1.2 <3";
     document.getElementById('ciao').style.color = "blue";
     document.getElementById('auguri').style.textShadow = "0px 0px 22px blue"
     document.getElementById('title').innerHTML = "+1.2"
 }
 
-if (days < 3590) {
+if (days < 2859) {
     document.getElementById('auguri').innerHTML = "";
 }
 
