@@ -26,3 +26,23 @@ if (days < 2859) {
 
 
 },1000); 
+
+var date = new Date("Sep 28 2022, 00:00:00").getTime()
+var a = setInterval(function() {
+    var ora = new Date().getTime();
+    var distances = date - ora;
+    var day = Math.floor(distances / (1000 * 60 * 60 * 24 ))
+    var hour = Math.floor((distances % (1000 * 60 * 60 * 24 )) / (1000 * 60 * 60))
+    var minute = Math.floor((distances % (1000 * 60 * 60)) / (1000 * 60));
+    var second = Math.floor((distances % (1000 * 60)) / 1000)
+
+document.getElementById('days1').innerHTML = day;
+document.getElementById('hours1').innerHTML = hour;
+document.getElementById('minutes1').innerHTML = minute;
+document.getElementById('seconds1').innerHTML = second;
+
+if (day == 00 && hour == 00 && minute == 00 && second == 00) {
+    var doc = document.getElementById('span1');  doc.remove();
+}
+
+},1000);
