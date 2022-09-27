@@ -1,4 +1,4 @@
-var data = new Date("Jul 28 2032, 00:00:00").getTime()
+var data = new Date("Jul 28 2030, 00:00:00").getTime()
 var x = setInterval(function() {
     var now = new Date().getTime();
     var distance = data - now;
