@@ -1,11 +1,11 @@
 
+#span {margin: 0;}
+
 body {
     background-color: black;
 }
 
-
-
-p {display: inline; margin: 10px;    
+p {display: inline; margin: 5px;    
 }
 
 h5 {
@@ -14,7 +14,20 @@ h5 {
     font-size: 16.5px;
 }
 
+@keyframes division {
+    0% {margin: 5px}
+    100% {margin:10px}
+}
 
+@keyframes division-mid {
+    0% {margin: 5px}
+    100% {margin: 10px}
+}
+
+@keyframes span {
+    0% {margin-left: 0px; margin-right: 0px}
+    100% {margin-left: 19px; margin-right: 19px}
+  }
 
 @font-face {
     font-family: font1;
@@ -40,7 +53,7 @@ h5 {
 }
 
 @media(max-width:600px) {
-      
+      .ciao {font-size: 20px;}
 }
 
 @media(max-width:548px) {
@@ -55,5 +68,6 @@ h5 {
 }
 
 @media(max-width:328px) {    
-    h5 {font-size:12px;}
+    h5 {font-size:10px;}
+    .ciao {font-size: 15px;}
 }
