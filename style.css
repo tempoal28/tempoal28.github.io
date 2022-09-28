@@ -44,16 +44,16 @@ h5 {
 }
 
 @media(max-width:548px) {
-    h5 {font-size: 13px;}
+    h5 {font-size: 15px;}
 }
 
 @media(max-width:460px) {   
-    h5 {font-size:9px ;}
+    h5 {font-size:14px ;}
 }
 
 @media(max-width:400px) {   
 }
 
 @media(max-width:328px) {    
-    h5 {font-size:9px;}
+    h5 {font-size:12px;}
 }
