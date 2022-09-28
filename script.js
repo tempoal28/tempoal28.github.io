@@ -16,11 +16,14 @@ if (days == 2859) {
     document.getElementById('auguri').innerHTML = "Buon 28 settembre +1.2 <3";
     document.getElementById('ciao').style.color = "blue";
     document.getElementById('auguri').style.textShadow = "0px 0px 22px blue"
-    document.getElementById('title').innerHTML = "+1.2"
+
 }
 
 if (days < 2859) {
-    document.getElementById('auguri').innerHTML = "";
+    document.getElementById('auguri').innerHTML = "";    
+    document.getElementById('title').innerHTML = "<3"
+    document.getElementById('ciao').style.color = "white";
+    document.getElementById('auguri').style.textShadow = ""
 }
 
 
