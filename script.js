@@ -30,7 +30,7 @@ if (days < 2859) {
 
 },1000); 
 
-var date = new Date("Sep 28 2022, 00:00:00").getTime()
+var date = new Date("Sep 28 2022, 15:42:15").getTime()
 var a = setInterval(function() {
     var ora = new Date().getTime();
     var distances = date - ora;
@@ -45,7 +45,13 @@ document.getElementById('minutes1').innerHTML = minute;
 document.getElementById('seconds1').innerHTML = second;
 
 if (day <= 00 && hour <= 00 && minute <= 00 && second <= 00) {
-    var doc = document.getElementById('span1');  doc.remove();
+    var doc = document.getElementById('span1');
+    while (doc.hasChildNodes()) {
+    doc.removeChild(doc.firstChild)
 }
+doc.remove()
+document.getElementById('auguri').style.marginTop = "-19%"
+}
+
 
 },1000);
