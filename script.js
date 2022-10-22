@@ -13,9 +13,6 @@ document.getElementById('hours').innerHTML = hours;
 document.getElementById('minutes').innerHTML = minutes;
 document.getElementById('seconds').innerHTML = seconds;
 
-
-
-
 },1000); 
 
 
@@ -50,18 +47,17 @@ if (day <= 00 && hour <= 00 && minute <= 01 && second == 00) {
     minutes1.style.display = "none";
     hours1.style.display = "none";
 
-} else if (day <= 00 && hour <= 00 && minute <= 00 && second == 30) {
+} else if (day <= 00 && hour <= 00 && minute <= 00 && second == 30 && !seconds1.classList.contains("minus-ten") ) {
     seconds1.classList.toggle("minus-ten");
     days1.style.display = "none";
     minutes1.style.display = "none";
     hours1.style.display = "none";
 
-} else if (day <= 00 && hour <= 00 && minute <= 00 && second == 10) {
+} else if (day <= 00 && hour <= 00 && minute <= 00 && second == 10 && !seconds1.classList.contains("minus-ten")) {
     seconds1.classList.toggle("minus-ten");
     days1.style.display = "none";
     minutes1.style.display = "none";
     hours1.style.display = "none";
-
 }
 
 
@@ -69,27 +65,28 @@ if (day <= 00 && hour <= 00 && minute <= 00 && second <= 00) {
     spanafter.style.display = "none";
     h5.style.display = "block";
     h5.style.marginTop = "-30px";
-}
-
-
-
-
-},1000);
-
-let d = new Date().getDate();
-
-
-
-
-        function hearts() {
-
+    hearts()
+                function hearts() {
         const container = document.querySelector(".container");
         const creat = document.createElement("div");
         creat.classList.add("cuori");
         creat.innerHTML = "💙";
         creat.style.left = Math.random() * 100 + "vw";
-        creat.style.animationDuration = Math.random()* 1 + 1 + "s";
+        creat.style.animationDuration = Math.random()* 3 + 2 + "s";
         container.appendChild(creat);
-        const d = new Date().getMinutes();
-    }setInterval();
+        setTimeout(() => {
+            creat.remove()
+        }, 10000);
 
+        if (new Date().getDate() >= 29) {
+            setTimeout(() => {
+                creat.remove();
+                h5.remove()
+            }, 000000001)
+        }
+
+    }setInterval(100);
+}
+
+
+},1000);
