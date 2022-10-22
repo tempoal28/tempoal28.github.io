@@ -1,44 +1,91 @@
+@font-face {
+    font-family: font1;
+    src: url(/28.07.2032/font1.ttf);
+}
 
-#span {margin: 0;}
+*{border: red 1px solid;}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: font1;
+    font-size: 27px;
+    color: #fff;
+    flex-direction: column;
+}
+
+.cuori {
+    font-size: 23px;
+    font-weight: bold;
+    position: fixed;
+    top: -1vh;
+    left: 0;
+    animation: fall 3s ease-in infinite;
+}
+
+ @keyframes fall {
+    to{
+        transform: translateY(101vh);
+    }
+ }
+
+.countdown {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    width: 100vw;
+}
+
+#span {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+}
+
+#spann {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    margin-top: -30px;
+}
 
 body {
     background-color: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
-p {display: inline; margin: 5px;    
+.minus-ten {
+    animation: change-color 5s forwards;
+}
+
+p {
+    display: inline; margin: 5px;    
 }
 
 h5 {
     color: white;
     font-family: font1;
     font-size: 16.5px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    opacity: 0;
+    display: none;
+    animation: in 2 forwards;
 }
 
-@keyframes division {
-    0% {margin: 5px}
-    100% {margin:10px}
+@keyframes in {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
-@keyframes division-mid {
-    0% {margin: 5px}
-    100% {margin: 10px}
-}
+@keyframes change-color {
 
-@keyframes span {
-    0% {margin-left: 0px; margin-right: 0px}
-    100% {margin-left: 19px; margin-right: 19px}
-  }
-
-@font-face {
-    font-family: font1;
-    src: url(font1.ttf);
-}
-
-.ciao {
-    font-family: font1;
-    font-size: 27px;
-    color: #fff;
-    min-height: 600px;
+    0% {color: white; margin: 5px; margin-top: 0}
+    100%{color: blue; margin: 30px; margin-top: 0}
 }
 
 

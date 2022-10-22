@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 var data = new Date("Jul 28 2030, 00:00:00").getTime()
 var x = setInterval(function() {
     var now = new Date().getTime();
@@ -12,42 +19,11 @@ document.getElementById('hours').innerHTML = hours;
 document.getElementById('minutes').innerHTML = minutes;
 document.getElementById('seconds').innerHTML = seconds;
 
-if (days == 2859) {
-    document.getElementById('auguri').innerHTML = "Buon 28 settembre +1.2 <3";
-    document.getElementById('ciao').style.color = "blue";
-    document.getElementById('auguri').style.textShadow = "0px 0px 22px blue"
-}
-
-
-//animazione finale:
-if (days < 2859) {
-    document.getElementById('auguri').innerHTML = "";    
-    document.getElementById('title').innerHTML = "<3"
-    document.getElementById('ciao').style.color = "white";
-    document.getElementById('auguri').style.textShadow = ""
-}
-
-if (days == 2859 && hours <= 00 && minutes <= 00 && seconds < 10) {
-    document.getElementById('span').style.animation = "span 6s"
-    document.getElementById('days').style.animation = "division 6s";
-    document.getElementById('seconds').style.animation = "division 6s";
-    document.getElementById('hours').style.animation = "division-mid 6s";
-    document.getElementById('seconds').style.animation = "division-mid 6s";
-}
-
-
-if (days == 2859 && hours == 00 && minutes == 00 && seconds <= 5) {
-    document.getElementById('span').style.animationPlayState = "paused"
-    document.getElementById('days').style.animationPlayState = "paused"
-    document.getElementById('hours').style.animationPlayState = "paused"
-    document.getElementById('minutes').style.animationPlayState = "paused"
-    document.getElementById('seconds').style.animationPlayState = "paused"
-}
-
-
 },1000); 
 
-var date = new Date("Sep 28 2022, 00:00:00").getTime()
+
+
+var date = new Date("Oct 21 2022, 18:53:00").getTime()
 var a = setInterval(function() {
     var ora = new Date().getTime();
     var distances = date - ora;
@@ -56,19 +32,59 @@ var a = setInterval(function() {
     var minute = Math.floor((distances % (1000 * 60 * 60)) / (1000 * 60));
     var second = Math.floor((distances % (1000 * 60)) / 1000)
 
+var spanafter, span, days1, hours1, minutes1, seconds1, h5;
+spanafter = document.getElementById("spann");
+span = document.getElementById("span");
+days1 = document.getElementById("days1");
+hours1 = document.getElementById('hours1');
+minutes1 = document.getElementById('minutes1');
+seconds1 = document.getElementById('seconds1');
+h5 = document.querySelector("h5");
+
 document.getElementById('days1').innerHTML = day;
 document.getElementById('hours1').innerHTML = hour;
 document.getElementById('minutes1').innerHTML = minute;
 document.getElementById('seconds1').innerHTML = second;
 
+if (day <= 00 && hour <= 00 && minute <= 00 && second == 10) {
+
+    seconds1.classList.toggle("minus-ten");
+    days1.style.display = "none";
+    minutes1.style.display = "none";
+    hours1.style.display = "none";
+
+}
+
+if (day <= 00 && hour <= 00 && minute <= 00 && second == 10) {
+    
+}
+
 if (day <= 00 && hour <= 00 && minute <= 00 && second <= 00) {
-    var doc = document.getElementById('spann');
-    while (doc.hasChildNodes()) {
-    doc.removeChild(doc.firstChild)
+    spanafter.style.display = "none";
+    h5.style.display = "block"
+    h5.style.marginTop = "-30px"
+
+
 }
-doc.remove()
-document.getElementById('auguri').style.marginTop = "-19%"
-}
+
+
+
 
 
 },1000);
+
+
+    function hearts() {
+        const container = document.querySelector(".container");
+
+        const creat = document.createElement("div");
+        creat.classList.add("cuori");
+        creat.innerHTML = "💙";
+        creat.style.left = Math.random() * 100 + "vw";
+        creat.style.animationDuration = Math.random()* 3 + 7 + "s";
+        container.appendChild(creat);
+    }
+    
+
+
+setInterval(hearts, 1000)
