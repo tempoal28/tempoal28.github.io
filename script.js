@@ -78,7 +78,7 @@ if (day <= 00 && hour <= 00 && minute <= 00 && second <= 00) {
             creat.remove()
         }, 10000);
 
-        if (new Date().getDate() >= 29) {
+        if (new Date().getDate() >= 3) {
             setTimeout(() => {
                 creat.remove();
                 h5.remove()
