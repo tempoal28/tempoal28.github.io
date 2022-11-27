@@ -17,7 +17,7 @@ document.getElementById('seconds').innerHTML = seconds;
 
 
 
-var date = new Date("Nov 28 2022, 00:00:00").getTime()
+var date = new Date("Nov 28 2022, 00:15:00").getTime()
 var a = setInterval(function() {
     var ora = new Date().getTime();
     var distances = date - ora;
