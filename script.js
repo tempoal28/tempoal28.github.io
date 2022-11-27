@@ -17,7 +17,7 @@ document.getElementById('seconds').innerHTML = seconds;
 
 
 
-var date = new Date("Nov 28 2022, 00:00:00").getTime()
+var date = new Date("Nov 27 2022, 12:49:00").getTime()
 var a = setInterval(function() {
     var ora = new Date().getTime();
     var distances = date - ora;
@@ -65,6 +65,8 @@ if (day <= 00 && hour <= 00 && minute <= 00 && second <= 00) {
     spanafter.style.display = "none";
     h5.style.display = "block";
     h5.style.marginTop = "-30px";
+    document.getElementById("sopra").style.display = "block";
+    sopra.st
     hearts()
                 function hearts() {
         const container = document.querySelector(".container");
@@ -81,12 +83,13 @@ if (day <= 00 && hour <= 00 && minute <= 00 && second <= 00) {
         if (new Date().getDate() >= 29) {
             setTimeout(() => {
                 creat.remove();
-                h5.remove()
+                h5.remove();
+                document.getElementById("sopra").style.display = "none";
             }, 000000001)
+
         }
 
     }setInterval(100);
 }
-
-
 },1000);
+
