@@ -1,9 +1,25 @@
 @font-face {
     font-family: font1;
-    src: url(/28.07.2032/font1.ttf);
+    src: url(font1.ttf);
 }
 
+#BTN {
+    font-family: font1;
+    background-color: transparent;
+    color: white;
+}
 
+#click {
+    font-size: 20px;
+}
+
+#sotto {display: none;}
+#sopra {display: none;}
+#sopra:hover + #sotto {
+    display: block;
+    color: white;
+    font-size: 15px;
+  }
 
 .container {
     width: 100vw;
@@ -64,7 +80,7 @@ body {
 }
 
 p {
-    display: inline; margin: 5px;    
+    display: inline; margin: 5px; font-family: font1; 
 }
 
 h5 {
