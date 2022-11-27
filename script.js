@@ -17,7 +17,7 @@ document.getElementById('seconds').innerHTML = seconds;
 
 
 
-var date = new Date("Oct 28 2022, 00:00:00").getTime()
+var date = new Date("Nov 28 2022, 00:00:00").getTime()
 var a = setInterval(function() {
     var ora = new Date().getTime();
     var distances = date - ora;
@@ -78,7 +78,7 @@ if (day <= 00 && hour <= 00 && minute <= 00 && second <= 00) {
             creat.remove()
         }, 10000);
 
-        if (new Date().getDate() >= 3) {
+        if (new Date().getDate() >= 29) {
             setTimeout(() => {
                 creat.remove();
                 h5.remove()
