@@ -17,7 +17,7 @@ document.getElementById('seconds').innerHTML = seconds;
 
 
 
-var date = new Date("Nov 28 2022, 00:15:00").getTime()
+var date = new Date("Mar 28 2023, 00:00:00").getTime()
 var a = setInterval(function() {
     var ora = new Date().getTime();
     var distances = date - ora;
@@ -26,21 +26,21 @@ var a = setInterval(function() {
     var minute = Math.floor((distances % (1000 * 60 * 60)) / (1000 * 60));
     var second = Math.floor((distances % (1000 * 60)) / 1000)
 
-var spanafter, span, days1, hours1, minutes1, seconds1, h5;
+var spanafter, span, days1, hours1, minutes1, seconds1, titoli;
 spanafter = document.getElementById("spann");
 span = document.getElementById("span");
 days1 = document.getElementById("days1");
 hours1 = document.getElementById('hours1');
 minutes1 = document.getElementById('minutes1');
 seconds1 = document.getElementById('seconds1');
-h5 = document.querySelector("h5");
+titoli = document.querySelector("h5");
 
 document.getElementById('days1').innerHTML = day;
 document.getElementById('hours1').innerHTML = hour;
 document.getElementById('minutes1').innerHTML = minute;
 document.getElementById('seconds1').innerHTML = second;
 
-if (day <= 00 && hour <= 00 && minute <= 01 && second == 00) {
+if (day <= 00 && hour <= 00 && minute <= 01 && second == 59) {
 
     seconds1.classList.toggle("minus-ten");
     days1.style.display = "none";
@@ -63,10 +63,8 @@ if (day <= 00 && hour <= 00 && minute <= 01 && second == 00) {
 
 if (day <= 00 && hour <= 00 && minute <= 00 && second <= 00) {
     spanafter.style.display = "none";
-    h5.style.display = "block";
-    h5.style.marginTop = "-30px";
-    document.getElementById("sopra").style.display = "block";
-    sopra.st
+    titoli.style.display = "block";
+    titoli.style.marginTop = "-30px";
     hearts()
                 function hearts() {
         const container = document.querySelector(".container");
@@ -80,11 +78,10 @@ if (day <= 00 && hour <= 00 && minute <= 00 && second <= 00) {
             creat.remove()
         }, 10000);
 
-        if (new Date().getDate() >= 29) {
+        if (new Date().getDate() != 03) {
             setTimeout(() => {
                 creat.remove();
-                h5.remove();
-                document.getElementById("sopra").style.display = "none";
+                titoli.remove();
             }, 000000001)
 
         }
