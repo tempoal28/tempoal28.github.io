@@ -17,7 +17,7 @@ document.getElementById('seconds').innerHTML = seconds;
 
 
 
-var date = new Date("Mar 28 2023, 00:00:00").getTime()
+var date = new Date("Nov 5 2023, 00:00:00").getTime()
 var a = setInterval(function() {
     var ora = new Date().getTime();
     var distances = date - ora;
@@ -33,27 +33,27 @@ days1 = document.getElementById("days1");
 hours1 = document.getElementById('hours1');
 minutes1 = document.getElementById('minutes1');
 seconds1 = document.getElementById('seconds1');
-titoli = document.querySelector("h5");
+titoli = document.getElementById("auguri");
 
 document.getElementById('days1').innerHTML = day;
 document.getElementById('hours1').innerHTML = hour;
 document.getElementById('minutes1').innerHTML = minute;
 document.getElementById('seconds1').innerHTML = second;
 
-if (day <= 00 && hour <= 00 && minute <= 01 && second == 59) {
+if (day <= 0o0 && hour <= 0o0 && minute <= 0o1 && second == 59) {
 
     seconds1.classList.toggle("minus-ten");
     days1.style.display = "none";
     minutes1.style.display = "none";
     hours1.style.display = "none";
 
-} else if (day <= 00 && hour <= 00 && minute <= 00 && second == 30 && !seconds1.classList.contains("minus-ten") ) {
+} else if (day <= 0o0 && hour <= 0o0 && minute <= 0o0 && second == 30 && !seconds1.classList.contains("minus-ten") ) {
     seconds1.classList.toggle("minus-ten");
     days1.style.display = "none";
     minutes1.style.display = "none";
     hours1.style.display = "none";
 
-} else if (day <= 00 && hour <= 00 && minute <= 00 && second == 10 && !seconds1.classList.contains("minus-ten")) {
+} else if (day <= 0o0 && hour <= 0o0 && minute <= 0o0 && second == 10 && !seconds1.classList.contains("minus-ten")) {
     seconds1.classList.toggle("minus-ten");
     days1.style.display = "none";
     minutes1.style.display = "none";
@@ -61,7 +61,7 @@ if (day <= 00 && hour <= 00 && minute <= 01 && second == 59) {
 }
 
 
-if (day <= 00 && hour <= 00 && minute <= 00 && second <= 00) {
+if (day <= 0o0 && hour <= 0o0 && minute <= 0o0 && second <= 0o0) {
     spanafter.style.display = "none";
     titoli.style.display = "block";
     titoli.style.marginTop = "-30px";
@@ -78,11 +78,11 @@ if (day <= 00 && hour <= 00 && minute <= 00 && second <= 00) {
             creat.remove()
         }, 10000);
 
-        if (new Date().getDate() != 03) {
+        if (new Date().getDate() != 0o3) {
             setTimeout(() => {
                 creat.remove();
                 titoli.remove();
-            }, 000000001)
+            }, 0o00000001)
 
         }
 
